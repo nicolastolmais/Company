@@ -1,0 +1,74 @@
+/* Nicolas Tolmias */
+
+header
+{
+   height: 50px;
+   border: 1px solid #CCC;
+   position: fixed;
+   top: 0px;
+   width:100%;
+   font-family: serif;
+   font-size: 18px;
+   background-color: #4B4D52;
+   text-align: center;
+   color: #DE8642;
+   z-index: 1;
+}
+
+.Directory{
+   list-style-type: none;
+   display: inline-block;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.TechPic{
+   top: 23px;
+   width: 100%;
+   height: 500px;
+   position: relative;
+   z-index: -1;
+}
+
+h1{
+   position: absolute;
+   top: 200px;
+   width: 100%;
+   padding: 10px;
+   color: white;
+   background: rgba(0, 0, 0, 0.7);
+}
+
+.Latest_Projects{
+   text-align: center;
+   padding-top: 75px;
+   height: 400px;
+   
+}
+.Latest_Projects_1{
+   display: inline-block;
+   float:left;
+   padding-left: 150px;
+   border: 5px solid #CCC;
+}
+.Latest_Projects_2{
+   display: inline-block;
+   text-align: center;
+   border: 5px solid #CCC;
+}
+.Latest_Projects_3{
+   display: inline-block;
+   float:right;
+   padding-right: 150px;
+   border: 5px solid #CCC;
+}
+
+footer
+{
+  background-color: #4B4D52;
+  color: #DE8642;
+  font-size: 15px;
+  padding: 3em;
+  width:100%;
+
+}
