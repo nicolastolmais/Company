@@ -6,9 +6,18 @@
 <body>
    <header>
       <ul>
-         <li class="Directory"><a href=Tyranocorp.html> Home </a></li>
+         <li class="Directory"><a href="Tyranocorp.html">Home</a></li>
          <li class="Directory"><a> About Us </a></li>
-         <li class="Directory"><a href=BuildPC.html> Directory </a></li>
+         <li class="Directory">
+            <div class="dropdown">
+               <button onclick="myFunction()" class="dropbtn">Pages</button>
+               <div id="myDropdown" class="dropdown-content">
+                  <a href=BuildPC.html>Build A PC</a>
+                  <a href="#about">About</a>
+                  <a href="#contact">Contact</a>
+               </div>
+            </div>
+         </li>
          <li class="Directory"><a> Sponsors </a></li>
       </ul>
    </header>
@@ -16,7 +25,7 @@
    <div class="Introduction">
       <img src="technology1.jpg" alt="Tyranocorp Picture" class="TechPic">
       <h1>
-         Achieving is Believing
+         The Leader in Technology
       </h1>
    </div>
 
@@ -65,3 +74,5 @@
 
 
 </body>
+
+<script src="tyranoApp.js"></script>
