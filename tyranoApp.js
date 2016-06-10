@@ -18,3 +18,5 @@ window.onclick = function(event) {
     }
   }
 }
+
+//javascript if browser width is less x than change css

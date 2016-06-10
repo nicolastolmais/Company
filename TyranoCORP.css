@@ -1,4 +1,14 @@
 /* Nicolas Tolmias */
+body
+{
+      font-family: "Arial", Arial, sans-serif;
+      white-space: nowrap;
+      width: 80%;
+      height: 80%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+}
 
 header
 {
@@ -6,14 +16,14 @@ header
    border: 1px solid #CCC;
    position: fixed;
    top: 0px;
-   width:100%;
-   font-family: serif;
    font-size: 18px;
    background-color: #4B4D52;
    text-align: center;
    color: #DE8642;
    z-index: 1;
    padding-bottom: 5px;
+   padding-left: 350px;
+   padding-right: 350px;
 }
 
 header a:hover{
@@ -42,7 +52,7 @@ header a:hover{
 
 .TechPic{
    top: 30px;
-   width: 100%;
+   width: 1050px;
    height: 500px;
    position: relative;
    z-index: -1;
@@ -51,40 +61,56 @@ header a:hover{
 h1{
    position: absolute;
    top: 200px;
-   width: 100%;
+   width: 1050px;
    padding: 10px;
    color: white;
    background: rgba(0, 0, 0, 0.7);
 }
 
 .Latest_Projects{
-   text-align: center;
    padding-top: 75px;
    height: 400px;
 
 }
-.Latest_Projects_1{
+.Latest_Projects_1
+{
    display: inline-block;
-   float:left;
-   padding-left: 150px;
+   padding-left: 50px;
+   padding-right: 50px;
    border: 5px solid #CCC;
-}
-.Latest_Projects_2{
-   display: inline-block;
    text-align: center;
-   border: 5px solid #CCC;
+   margin-left: 10px;
+   margin-right: 10px;
 }
-.Latest_Projects_3{
+.Latest_Projects_2
+{
    display: inline-block;
-   float:right;
-   padding-right: 150px;
-   padding_left: 150px;
+   padding-left: 50px;
+   padding-right: 50px;
    border: 5px solid #CCC;
+   text-align: center;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.Latest_Projects_3
+{
+   display: inline-block;
+   padding-left: 50px;
+   padding-right: 50px;
+   border: 5px solid #CCC;
+   text-align: center;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.Latest_Projects h2
+{
+   padding-left: 350px;
 }
 
 table {
-   position: relative;
-   width: 100%;
+   position: inline-block;
+   width: 1050px;
    top:43px;
    bottom: 50px;
    height: 400px;
@@ -183,10 +209,10 @@ a:active {
    background-color: #4B4D52;
    color: #DE8642;
    font-size: 15px;
-   padding-top: 50px;
-   padding-bottom: 50px;
-   padding-left: 5%;
-   width:100%;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-left: 100px;
+   width: 1050px;
 }
 .topFooter p
 {
@@ -194,12 +220,56 @@ a:active {
    padding-left: 25px;
 }
 
+
 .topFooter img
 {
    height: 50px;
    width: 50px;
    border-radius: 50%;
+
 }
+
+#leftSide , #rightSide
+{
+   display: inline-block;
+}
+
+#leftSide
+{
+   width: 500px;
+   padding-right: 100px;
+}
+
+#rightSide
+{
+   padding-left: 100px;
+   width: 500px;
+   border-left: thick double #383838;
+
+}
+.contactUs p
+{
+   display: block;
+}
+
+#rightSide input[type=text]
+{
+   padding: 10px;
+   border: none;
+   border-bottom: solid 2px #c9c9c9;
+   transition: border 0.3s;
+   background-color: #4B4D52;
+   font-style: italic;
+}
+#rightSide input[type=submit]
+{
+   margin-top: 5px;
+   background-color: #DE8642;
+   border: none;
+   border-radius: 25px;
+}
+
+
 
 .bottomFooter
 {
@@ -209,13 +279,25 @@ a:active {
    font-size: 12px;
    padding-top: 3px;
    padding-bottom: 3px;
-   padding-left: 5%;
-   width:100%;
+   padding-left: 100px;
+   width:1050px;
+}
+#creator
+{
+   display: inline-block;
+   width: 500px;
 }
 
-.bottomFooter p
+#policy, #terms
 {
    display: inline-block;
    width: 200px;
-   text-align: center;
+   text-align: right;
+   clear: both;
+}
+
+#follow
+{
+   display:relative;
+   clear:right;
 }
