@@ -1,4 +1,14 @@
 /* Nicolas Tolmias */
+
+/*
+Color Pallets:
+#233237 GunMetal
+#984843 Rusty Red
+#EAC67A Warm yellow
+#18121E Navy Blue
+
+*/
+
 body
 {
       font-family: "Arial", Arial, sans-serif;
@@ -13,13 +23,13 @@ body
 header
 {
    height: 50px;
+   width: 100%;
    border: 1px solid #CCC;
    position: fixed;
    top: 0px;
    font-size: 18px;
-   background-color: #4B4D52;
-   text-align: center;
-   color: #DE8642;
+   background-color: #233237;
+   color: #EAC67A;
    z-index: 1;
    padding-bottom: 5px;
    padding-left: 350px;
@@ -29,6 +39,7 @@ header
 header a:hover{
    color: yellow;
 }
+
 
 .Directory button:hover{
    color: yellow;
@@ -42,71 +53,90 @@ header a:hover{
    display: inline-block;
    padding-left: 20px;
    padding-right: 20px;
-   background-color: #4B4D52;
-   color: #DE8642;
+   background-color: #233237;
+   color: #EAC67A;
    font-size: 16px;
    border: none;
    cursor: pointer;
    z-index: 2;
 }
 
-.TechPic{
+
+.TechPic1
+{
    top: 30px;
-   width: 1050px;
+   height: 500px;
+   position: relative;
+   z-index: -1;
+}
+.TechPic2
+{
+   margin-left: -4px;
+   top: 30px;
    height: 500px;
    position: relative;
    z-index: -1;
 }
 
-h1{
+#companyName
+{
    position: absolute;
    top: 200px;
-   width: 1050px;
+   width: 100%;
    padding: 10px;
    color: white;
    background: rgba(0, 0, 0, 0.7);
 }
 
-.Latest_Projects{
-   padding-top: 75px;
-   height: 400px;
+#leader
+{
+   position: absolute;
+   top: 260px;
+   width: 100%;
+   padding: 10px;
+   color: white;
+   background: rgba(0, 0, 0, 0.7);
+}
+
+
+.Latest_Projects
+{
+   padding-left: 80px;
+   padding-top: 100px;
 
 }
-.Latest_Projects_1
+
+.latestBuilds
 {
-   display: inline-block;
-   padding-left: 50px;
-   padding-right: 50px;
-   border: 5px solid #CCC;
-   text-align: center;
-   margin-left: 10px;
-   margin-right: 10px;
+   padding-left: 80px;
+   padding-top: 35px;
 }
-.Latest_Projects_2
+
+.Latest_Projects_1 , .Latest_Projects_2, .Latest_Projects_3
 {
+   width: 283px;
    display: inline-block;
-   padding-left: 50px;
-   padding-right: 50px;
    border: 5px solid #CCC;
    text-align: center;
    margin-left: 10px;
    margin-right: 10px;
-}
-.Latest_Projects_3
-{
-   display: inline-block;
-   padding-left: 50px;
-   padding-right: 50px;
-   border: 5px solid #CCC;
-   text-align: center;
-   margin-left: 10px;
-   margin-right: 10px;
+   margin-bottom: 50px;
+   height: 200px;
 }
 
 .Latest_Projects h2
 {
-   padding-left: 350px;
+   padding-left: 370px;
+   padding-bottom: 15px;
 }
+
+ .latestBuilds h2
+{
+   padding-left: 380px;
+   padding-bottom: 15px;
+}
+
+
 
 table {
    position: inline-block;
@@ -135,8 +165,8 @@ table#deals th {
 }
 
 .dropbtn {
-    background-color: #4B4D52;
-    color: #DE8642;
+    background-color: #233237;
+    color: #EAC67A;
     font-family: serif;
     font-size: 18px;
     border: none;
@@ -158,7 +188,7 @@ table#deals th {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #4B4D70;
+    background-color: #233237;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -167,7 +197,7 @@ table#deals th {
 }
 
 .dropdown-content a {
-    color: #DE8642;
+    color: #233237;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -175,7 +205,7 @@ table#deals th {
 }
 
 .dropdown a:hover {
-   background-color: #4B4D52
+   background-color: #233243
 }
 
 .show {
@@ -184,35 +214,35 @@ table#deals th {
 }
 
 a:link {
-    color: #DE8642;
+    color: #EAC67A;
     text-decoration: none;
 }
 
 a:visited {
-    color: #DE8642;
+    color: #EAC67A;
     text-decoration: none;
 }
 
 a:hover {
-    color: #DE8642;
+    color: #EAC67A;
     text-decoration: none;
 }
 
 a:active {
-    color: #DE8642;
+    color: #EAC67A;
     text-decoration: none;
 }
 
 .topFooter
 {
    position: relative;
-   background-color: #4B4D52;
-   color: #DE8642;
+   background-color: #233237;
+   color: #EAC67A;
    font-size: 15px;
    padding-top: 30px;
    padding-bottom: 30px;
    padding-left: 100px;
-   width: 1050px;
+   width: 200%;
 }
 .topFooter p
 {
@@ -250,6 +280,7 @@ a:active {
 .contactUs p
 {
    display: block;
+   padding-left: 100px;
 }
 
 #rightSide input[type=text]
@@ -258,13 +289,14 @@ a:active {
    border: none;
    border-bottom: solid 2px #c9c9c9;
    transition: border 0.3s;
-   background-color: #4B4D52;
+   background-color: #233237;
    font-style: italic;
+   color: #ffffff;
 }
 #rightSide input[type=submit]
 {
    margin-top: 5px;
-   background-color: #DE8642;
+   background-color: #EAC67A;
    border: none;
    border-radius: 25px;
 }
@@ -274,25 +306,25 @@ a:active {
 .bottomFooter
 {
    position: relative;
-   background-color: #383838;
-   color: #DE8642;
+   background-color: #18121E;
+   color: #EAC67A;
    font-size: 12px;
    padding-top: 3px;
    padding-bottom: 3px;
    padding-left: 100px;
-   width:1050px;
+   width:200%;
 }
+
 #creator
 {
    display: inline-block;
-   width: 500px;
+   width: 650px;
 }
 
 #policy, #terms
 {
    display: inline-block;
    width: 200px;
-   text-align: right;
    clear: both;
 }
 
@@ -300,4 +332,5 @@ a:active {
 {
    display:relative;
    clear:right;
+   padding-left: 100px;
 }
