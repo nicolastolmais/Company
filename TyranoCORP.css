@@ -34,6 +34,19 @@ header
    padding-bottom: 5px;
    padding-left: 350px;
    padding-right: 350px;
+   border-bottom: solid 2px #984843;
+}
+
+.headerLogo
+{
+   position: fixed;
+   margin-left: 125px;
+   margin-top: 5px;
+   width: 75px;
+   height: 50px;
+   z-index: 2;
+   border-radius: 25%;
+
 }
 
 header a:hover{
@@ -68,6 +81,7 @@ header a:hover{
    height: 500px;
    position: relative;
    z-index: -1;
+   border-bottom: solid 2px #984843;
 }
 .TechPic2
 {
@@ -76,6 +90,7 @@ header a:hover{
    height: 500px;
    position: relative;
    z-index: -1;
+   border-bottom: solid 2px #984843;
 }
 
 #companyName
@@ -106,34 +121,135 @@ header a:hover{
 
 }
 
-.latestBuilds
+.latestBuilds, .latestVids
 {
    padding-left: 80px;
    padding-top: 35px;
+   padding-right: 2000px;
+   border-top: solid 5px #984843;
 }
 
-.Latest_Projects_1 , .Latest_Projects_2, .Latest_Projects_3
+.Latest_Projects_1 , .Latest_Projects_2, .Latest_Projects_3, .latestVid1, .latestVid2, .latestVid3
 {
-   width: 283px;
+   width: 300px;
    display: inline-block;
-   border: 5px solid #CCC;
+   border: 4px solid #984843;
    text-align: center;
    margin-left: 10px;
    margin-right: 10px;
    margin-bottom: 50px;
-   height: 200px;
+   height: 300px;
+}
+
+.Latest_Projects_1 img, .Latest_Projects_2 img, .Latest_Projects_3 img
+{
+   padding-left: 5px;
+   width: 175px;
+   height: 175px;
+}
+
+.latestBuilds1
+{
+   display: inline-block;
+   border: 4px solid #984843;
+   text-align: center;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 50px;
+   height: 300px;
+   width: 300px;
+   color: #ffffff;
+   background-image: url("build1.jpeg");
+   background-size: 100% 100%;
+}
+
+.latestBuilds2
+{
+display: inline-block;
+border: 4px solid #984843;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 50px;
+height: 300px;
+width: 300px;
+color: #ffffff;
+background-image: url("build2.jpeg");
+background-size: 100% 100%;
+}
+
+.latestBuilds3
+{
+display: inline-block;
+border: 4px solid #984843;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 50px;
+height: 300px;
+width: 300px;
+color: #ffffff;
+background-image: url("build3.jpeg");
+background-size: 100% 100%;
+}
+
+.latestVid1
+{
+   display: inline-block;
+   border: 4px solid #984843;
+   text-align: center;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 50px;
+   height: 300px;
+   width: 300px;
+   color: #ffffff;
+}
+
+.latestVid2
+{
+display: inline-block;
+border: 4px solid #984843;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 50px;
+height: 300px;
+width: 300px;
+color: #ffffff;
+}
+
+.latestVid3
+{
+display: inline-block;
+border: 4px solid #984843;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 50px;
+height: 300px;
+width: 300px;
+color: #ffffff;
 }
 
 .Latest_Projects h2
 {
-   padding-left: 370px;
+   padding-left: 385px;
    padding-bottom: 15px;
 }
 
- .latestBuilds h2
+ .latestBuilds h2, .latestVids h2
 {
-   padding-left: 380px;
+
+   padding-left: 400px;
    padding-bottom: 15px;
+}
+
+.latestBuilds1 h3, .latestBuilds2 h3, .latestBuilds3 h3, .latestVid1 h3, .latestVid2 h3, .latestVid3 h3
+{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -243,6 +359,7 @@ a:active {
    padding-bottom: 30px;
    padding-left: 100px;
    width: 200%;
+   border-top: solid 2px #984843;
 }
 .topFooter p
 {
@@ -313,6 +430,7 @@ a:active {
    padding-bottom: 3px;
    padding-left: 100px;
    width:200%;
+   border-top: solid 2px #984843;
 }
 
 #creator
