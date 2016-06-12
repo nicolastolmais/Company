@@ -129,7 +129,7 @@ header a:hover{
    border-top: solid 5px #984843;
 }
 
-.Latest_Projects_1 , .Latest_Projects_2, .Latest_Projects_3, .latestVid1, .latestVid2, .latestVid3
+.Latest_Projects_1, .Latest_Projects_2, .Latest_Projects_3, .latestVid1, .latestVid2, .latestVid3
 {
    width: 300px;
    display: inline-block;
@@ -245,7 +245,7 @@ color: #ffffff;
    padding-bottom: 15px;
 }
 
-.latestBuilds1 h3, .latestBuilds2 h3, .latestBuilds3 h3, .latestVid1 h3, .latestVid2 h3, .latestVid3 h3
+.latestBuilds1 h3, .latestBuilds2 h3, .latestBuilds3 h3, .latestVid1 h3, .latestVid2 h3, .latestVid3 h3, .Latest_Projects_1 h3, .Latest_Projects_2 h3, .Latest_Projects_3 h3
 {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -283,8 +283,8 @@ table#deals th {
 .dropbtn {
     background-color: #233237;
     color: #EAC67A;
-    font-family: serif;
-    font-size: 18px;
+    font-family: "Arial", Arial, sans-serif;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     z-index: 2;
@@ -324,30 +324,66 @@ table#deals th {
    background-color: #233243
 }
 
+.dropbtn2 {
+    background-color: #233237;
+    color: #EAC67A;
+    font-family: "Arial", Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.dropdown-content2 a:hover{
+   color: yellow;
+}
+
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #233237;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    border: 1px solid white;
+}
+
+.dropdown-content2 a {
+    color: #233237;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 2;
+}
+
+.dropdown2 a:hover {
+   background-color: #233243
+}
+
 .show {
    display:block;
    z-index: 2;
 }
 
-a:link {
+.Directory a:visited, .Directory a:hover, .Directory a:link, .Directory a:active {
     color: #EAC67A;
     text-decoration: none;
 }
 
-a:visited {
-    color: #EAC67A;
+
+.Latest_Projects a:visited, .Latest_Projects a:hover, .Latest_Projects a:link, .Latest_Projects a:active  {
+    color: #18121E;
     text-decoration: none;
 }
 
-a:hover {
-    color: #EAC67A;
-    text-decoration: none;
-}
-
-a:active {
-    color: #EAC67A;
-    text-decoration: none;
-}
 
 .topFooter
 {
@@ -389,8 +425,7 @@ a:active {
 
 #rightSide
 {
-   padding-left: 100px;
-   width: 500px;
+   padding-left: 125px;
    border-left: thick double #383838;
 
 }
@@ -400,25 +435,11 @@ a:active {
    padding-left: 100px;
 }
 
-#rightSide input[type=text]
+#rightSide img
 {
-   padding: 10px;
-   border: none;
-   border-bottom: solid 2px #c9c9c9;
-   transition: border 0.3s;
-   background-color: #233237;
-   font-style: italic;
-   color: #ffffff;
+   height: 150px;
+   width: 150px;
 }
-#rightSide input[type=submit]
-{
-   margin-top: 5px;
-   background-color: #EAC67A;
-   border: none;
-   border-radius: 25px;
-}
-
-
 
 .bottomFooter
 {
