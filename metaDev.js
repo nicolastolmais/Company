@@ -6,6 +6,15 @@ function myFunction() {
 function myFunction2(){
    document.getElementById("myDropdown2").classList.toggle("show");
 }
+function showValue(newValue)
+{
+	document.getElementById("minrange").innerHTML=newValue;
+}
+function showValue2(newValue)
+{
+	document.getElementById("maxrange").innerHTML=newValue;
+}
+
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
@@ -35,5 +44,6 @@ window.onclick = function(event) {
     }
   }
 }
+
 
 //javascript if browser width is less x than change css

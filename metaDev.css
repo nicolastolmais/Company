@@ -42,10 +42,10 @@ header
    position: fixed;
    margin-left: 125px;
    margin-top: 5px;
-   width: 75px;
    height: 50px;
+   width: 50px;
    z-index: 2;
-   border-radius: 25%;
+   border-radius: 50%;
 
 }
 
@@ -95,8 +95,10 @@ header a:hover{
 
 #companyName
 {
+   text-align: center;
+   font-size: 50px;
    position: absolute;
-   top: 200px;
+   top: 190px;
    width: 100%;
    padding: 10px;
    color: white;
@@ -105,10 +107,24 @@ header a:hover{
 
 #leader
 {
+   text-align: center;
+   font-size: 50px;
    position: absolute;
-   top: 260px;
+   top: 270px;
    width: 100%;
    padding: 10px;
+   color: white;
+   background: rgba(0, 0, 0, 0.7);
+}
+
+#PCBuilder, #ProgramBuilder
+{
+   font-size: 40px;
+   position: absolute;
+   top: 200px;
+   width: 100%;
+   padding: 10px;
+   padding-left: 100px;
    color: white;
    background: rgba(0, 0, 0, 0.7);
 }
@@ -280,7 +296,7 @@ table#deals th {
     color: white;
 }
 
-.dropbtn {
+.dropbtn, .dropbtn2 {
     background-color: #233237;
     color: #EAC67A;
     font-family: "Arial", Arial, sans-serif;
@@ -290,18 +306,18 @@ table#deals th {
     z-index: 2;
 }
 
-.dropdown-content a:hover{
+.dropdown-content a:hover, .dropdown-content2 a:hover{
    color: yellow;
 }
 
 
-.dropdown {
+.dropdown, .dropdown2  {
     position: relative;
     display: inline-block;
     z-index: 2;
 }
 
-.dropdown-content {
+.dropdown-content, .dropdown-content2  {
     display: none;
     position: absolute;
     background-color: #233237;
@@ -312,7 +328,7 @@ table#deals th {
     border: 1px solid white;
 }
 
-.dropdown-content a {
+.dropdown-content a, .dropdown-content2 a  {
     color: #233237;
     padding: 12px 16px;
     text-decoration: none;
@@ -320,51 +336,7 @@ table#deals th {
     z-index: 2;
 }
 
-.dropdown a:hover {
-   background-color: #233243
-}
-
-.dropbtn2 {
-    background-color: #233237;
-    color: #EAC67A;
-    font-family: "Arial", Arial, sans-serif;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.dropdown-content2 a:hover{
-   color: yellow;
-}
-
-
-.dropdown2 {
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-}
-
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    background-color: #233237;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
-    border: 1px solid white;
-}
-
-.dropdown-content2 a {
-    color: #233237;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    z-index: 2;
-}
-
-.dropdown2 a:hover {
+.dropdown a:hover, .dropdown2 a:hover {
    background-color: #233243
 }
 
@@ -438,7 +410,7 @@ table#deals th {
 #rightSide img
 {
    height: 150px;
-   width: 150px;
+   width: 180px;
 }
 
 .bottomFooter
@@ -472,4 +444,167 @@ table#deals th {
    display:relative;
    clear:right;
    padding-left: 100px;
+}
+
+#quote
+{
+   position: absolute;
+   top: 200px;
+   width: 310px;
+   padding: 10px;
+   margin-left: 200px;
+   color: white;
+   background: rgba(0, 0, 0, 0.7);
+   white-space: normal;
+}
+
+#quotee
+{
+   position: absolute;
+   top: 240px;
+   width: 155px;
+   padding: 10px;
+   margin-left: 350px;
+   color: white;
+   background: rgba(0, 0, 0, 0.7);
+}
+
+.ceoPic
+{
+   position: absolute;
+   top: 125px;
+   margin-left: 650px;
+   height: 300px;
+   width: 275px;
+   z-index: 1;
+   border: 2px solid #984843;
+   border-radius: 5%;
+
+}
+
+.About
+{
+   padding-left: 80px;
+   padding-top: 50px;
+   padding-bottom: 25px;
+   padding-right: 50px;
+   width: 1000px;
+}
+
+
+.AboutLeft
+{
+   display: inline-block;
+   font-size: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-bottom: 50px;
+   margin-top: 50px;
+   height: 200px;
+   width: 400px;
+   white-space: normal;
+}
+
+.AboutRight
+{
+   display: inline-block;
+   font-size: 20px;
+   margin-left: 550px;
+   margin-right: 50px;
+   margin-bottom: 50px;
+   margin-top: 50px;
+   height: 200px;
+   width: 400px;
+   white-space: normal;
+}
+
+
+.AboutCenter
+{
+   display: inline-block;
+   font-size: 20px;
+   margin-left: 300px;
+   margin-right: 50px;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   white-space: normal;
+   width: 400px;
+}
+
+
+
+
+#aboutImage1
+{
+   position: absolute;
+   border-radius: 5px;
+   padding-left: 500px;
+   padding-top: 30px;
+   height: auto;
+   width: 450px;
+}
+
+#aboutImage2
+{
+   position: absolute;
+   border-radius: 5px;
+   padding-left: 40px;
+   padding-top: 30px;
+   height: auto;
+   width: 450px;
+}
+
+#buildImage1
+{
+   position: absolute;
+   border-radius: 5px;
+   padding-left: 550px;
+   padding-top: 30px;
+   height: auto;
+   width: 350px;
+}
+
+.personalInfo
+{
+   padding-left: 50px;
+   padding-bottom: 50px;
+}
+
+.personalInfo legend
+{
+   padding: 0.2em 0.5em;
+   border:1px solid darkblue;
+   color: darkblue;
+   background-color: lightblue;
+}
+
+.personalInfo fieldset
+{
+   padding: 0.2em 0.5em;
+   border:1px solid darkblue;
+   color: darkblue;
+   background-color: lightblue;
+}
+
+.personalInfo input, textarea{
+    background-color: #9DC45F;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #949494;
+    box-shadow: 1px 1px 1px #4C6E91;
+}
+.smart-green .button:hover {
+    background-color:#80A24A;
+}
+
+.midBackground
+{
+   top: auto;
+   height: 485px;
+   width: 1500px;
+   position: absolute;
+   z-index: -1;
+   opacity: 0.1;
 }

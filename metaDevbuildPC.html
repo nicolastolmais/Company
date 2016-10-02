@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="metaDev.css">
 <title>BuildPC</title>
 <body>
-   <img src="square.jpg" alt="companyLogo" class="headerLogo" >
+   <img src="MDlogo.png" alt="companyLogo" class="headerLogo" >
    <header>
       <ul>
          <li class="Directory"><a href="metaDev.html">Home</a></li>
@@ -23,41 +23,66 @@
             <div class="dropdown2">
                <button onclick="myFunction2()" class="dropbtn2">Services</button>
                <div id="myDropdown2" class="dropdown-content2">
-                  <a href=BuildPC.html>Build A PC</a>
-                  <a href="#about">Need a Program</a>
+                  <a href="metaDevbuildPC.html">Build A PC</a>
+                  <a href="metaDevBuildAProgram.html">Need a Program</a>
                </div>
             </div>
          </li>
-         <li class="Directory"><a> Sponsors </a></li>
+         <li class="Directory"><a href="metaDevSponsors.html"> Sponsors </a></li>
       </ul>
    </header>
 
-   <table id="deals">
-      <tr>
-         <th>Product</th>
-         <th>Price</th>
-         <th>Discount</th>
-         <th>Dealer</th>
-      </tr>
-      <tr>
-         <td>Jill</td>
-         <td>Smith</td>
-         <td>50</td>
-         <td>BestBuy</td>
-     </tr>
-      <tr>
-         <td>Eve</td>
-         <td>Jackson</td>
-         <td>94</td>
-         <td>Amazon</td>
-      </tr>
-      <tr>
-         <td>John</td>
-         <td>Doe</td>
-         <td>80</td>
-         <td>NewEgg</td>
-      </tr>
-   </table>
+   <div class="Introduction">
+      <img src="4-red-trianglish-pattern-flip.jpg" alt="header flip picture" class="TechPic1">
+      <img src="blue-trianglish-pattern.jpeg" alt="header Picture" class="TechPic2">
+      <h1 id="PCBuilder">
+         PC Builder
+      </h1>
+   </div>
+
+   <div class="About">
+      <img src="BuildingPC.jpg" id="buildImage1" alt="GroupPic"/>
+      <div class="AboutLeft">
+         <p>
+            Need help building a PC. Why not trust an expert to help you on your way.
+            We will work with you everystep off the way, answer any questions you may have,
+            and give you tips and tricks to help build your PC.
+         </p>
+      </div>
+   </div>
+
+<div class="personalInfo">
+   <form action="#thankyoupage">
+     <fieldset>
+       <legend>Personal information:</legend>
+       <!-- no breaks fix css -->
+       Name:<br>
+       <input type="text" name="name">
+       <br><br>
+       Email:<br>
+       <input type="text" name="email">
+       <br><br>
+       Price Range:<br>
+       <label for="price-max">min:</label>
+       <input type="range" name="price-min" id="price-min" value="0" min="0" max="5000" onchange="showValue(this.value)">
+       <span id="minrange">0</span>
+       <br>
+       <label for="price-max">max:</label>
+       <input type="range" name="price-max" id="price-max" value="0" min="0" max="5000" onchange="showValue2(this.value)">
+       <span id="maxrange">0</span>
+       <br><br>
+       Build Name:<br>
+       <input type="text" name="buildname">
+       <br><br>
+       Description:<br>
+       <textarea rows="4" cols="50">
+       </textarea>
+       <br><br>
+       <input type="submit" value="Submit">
+     </fieldset>
+   </form>
+</div>
+
 
    <footer class ="topFooter">
       <div id="leftSide">
@@ -74,7 +99,7 @@
          </div>
       </div>
       <div id="rightSide">
-         <img src="square.png" alt="footerLogo" class="footerPic">
+         <img src="MDlogo.png" alt="footerLogo" class="footerPic">
       </div>
    </footer>
 
