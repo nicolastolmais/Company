@@ -175,7 +175,7 @@ header a:hover{
    height: 300px;
    width: 300px;
    color: #ffffff;
-   background-image: url("build1.jpeg");
+   background-image: url("Images/build1.jpeg");
    background-size: 100% 100%;
 }
 
@@ -190,7 +190,7 @@ margin-bottom: 50px;
 height: 300px;
 width: 300px;
 color: #ffffff;
-background-image: url("build2.jpeg");
+background-image: url("Images/build2.jpeg");
 background-size: 100% 100%;
 }
 
@@ -205,7 +205,7 @@ margin-bottom: 50px;
 height: 300px;
 width: 300px;
 color: #ffffff;
-background-image: url("build3.jpeg");
+background-image: url("Images/build3.jpeg");
 background-size: 100% 100%;
 }
 
@@ -538,20 +538,22 @@ table#deals th {
 {
    position: absolute;
    border-radius: 5px;
-   padding-left: 500px;
-   padding-top: 30px;
+   margin-left: 550px;
+   margin-top: 30px;
    height: auto;
-   width: 450px;
+   width: 300px;
+   border: solid 5px #984843;
 }
 
 #aboutImage2
 {
    position: absolute;
    border-radius: 5px;
-   padding-left: 40px;
-   padding-top: 30px;
+   margin-left: 40px;
+   margin-top: 30px;
    height: auto;
    width: 450px;
+   border: solid 5px #984843;
 }
 
 #buildImage1
@@ -583,18 +585,25 @@ table#deals th {
    border: 1px solid #233237;
    color: #233237;
    background-color: #fafafa;
+   width: 500px;
+   
 }
 
 .personalInfo input, textarea{
-    background-color: #fafafa
-    ;
+    background-color: #fafafa;
     border-radius: 5px;
     border: none;
     padding: 10px 25px 10px 25px;
     color: #233237;
     text-shadow: 2px 2px 2px #ededed;
     box-shadow: 1px 1px 1px #EAC67A;
+    width: 500px;
 }
+.personalInfo input{
+    width: 300px;
+}
+
+
 .smart-green .button:hover {
     background-color: lightblue;
 }
@@ -612,21 +621,21 @@ table#deals th {
 .sponsorCenter{
    display: inline-block;
    font-size: 20px;
-   margin-left: 300px;
-   margin-right: 50px;
-   margin-top: 100px;
+   margin-left: 150px;
+   margin-right: 250px;
+   margin-top: 50px;
    margin-bottom: 75px;
    white-space: normal;
-   width: 400px;  
+   width: 900px; 
 }
 
 .sponsorPics img{
     width: 200px;
     float: left;
+    padding-top: 40px;
     margin-left: 100px;
     margin-right: 10px;
     padding-right: 50px;
-
 }
 
 .sponsorDescription{
@@ -634,4 +643,45 @@ table#deals th {
     margin-left: 200px;
     margin-bottom: 150px;
     white-space: normal;
+}
+
+.Product {
+   border-top: solid 5px #984843; 
+   margin-left: 50px;
+}
+
+.PCBuildDescription , .VideoDescription , .ProgramDescription{
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    white-space: normal;
+    clear: both;
+}
+
+.PCBuildName , .VideoName , .ProgramName{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+
+.PCBuildPics img{
+    display:inline;
+    width: 200px;
+    padding-left: 5px;
+}
+
+.ProgramPics img{
+    display:inline;
+    width: 200px;
+    padding-left: 5px;
+}
+
+.VideoPic img{
+    display:inline;
+    width: 200px;
+    padding-left: 5px;
+}
+
+.PCBuildPics{
+    padding-left: 50px;
 }
