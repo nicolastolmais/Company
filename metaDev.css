@@ -573,30 +573,30 @@ table#deals th {
 .personalInfo legend
 {
    padding: 0.2em 0.5em;
-   border:1px solid darkblue;
-   color: darkblue;
-   background-color: lightblue;
+   color: #233237;
+   background-color: #fafafa;
 }
 
 .personalInfo fieldset
 {
-   padding: 0.2em 0.5em;
-   border:1px solid darkblue;
-   color: darkblue;
-   background-color: lightblue;
+   padding: 15px;
+   border: 1px solid #233237;
+   color: #233237;
+   background-color: #fafafa;
 }
 
 .personalInfo input, textarea{
-    background-color: #9DC45F;
+    background-color: #fafafa
+    ;
     border-radius: 5px;
     border: none;
     padding: 10px 25px 10px 25px;
-    color: #FFF;
-    text-shadow: 2px 2px 2px #949494;
-    box-shadow: 1px 1px 1px #4C6E91;
+    color: #233237;
+    text-shadow: 2px 2px 2px #ededed;
+    box-shadow: 1px 1px 1px #EAC67A;
 }
 .smart-green .button:hover {
-    background-color:#80A24A;
+    background-color: lightblue;
 }
 
 .midBackground
@@ -606,5 +606,32 @@ table#deals th {
    width: 1500px;
    position: absolute;
    z-index: -1;
-   opacity: 0.1;
+   opacity: 0.03;
+}
+
+.sponsorCenter{
+   display: inline-block;
+   font-size: 20px;
+   margin-left: 300px;
+   margin-right: 50px;
+   margin-top: 100px;
+   margin-bottom: 75px;
+   white-space: normal;
+   width: 400px;  
+}
+
+.sponsorPics img{
+    width: 200px;
+    float: left;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding-right: 50px;
+
+}
+
+.sponsorDescription{
+    border-top: solid 5px #984843;
+    margin-left: 200px;
+    margin-bottom: 150px;
+    white-space: normal;
 }
