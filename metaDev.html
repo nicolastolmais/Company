@@ -1,169 +1,249 @@
 <!DOCTYPE html>
+<html>
 <meta charset=”utf-8” />
 <meta name=”author” content=”Nic Tolmais” />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
 <link rel="stylesheet" href="metaDev.css">
 <title>MetaDev Technologies</title>
+
 <body>
-   <img src="Images/MDlogo.png" alt="companyLogo" class="headerLogo" >
-   <header>
-      <ul>
-         <li class="Directory"><a href="metaDev.html">Home</a></li>
-         <li class="Directory"><a href="metaDevAboutUs.html"> About Us </a></li>
-         <li class="Directory">
-            <div class="dropdown">
-               <button onclick="myFunction()" class="dropbtn">Products</button>
-               <div id="myDropdown" class="dropdown-content">
-                  <a href= "metaDevProductBuilds.html">Builds</a>
-                  <a href= "metaDevProductPrograms.html">Code</a>
-                  <a href= "metaDevProductVideos.html">Vidoes</a>
-               </div>
+      <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
+                  <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                              <a class="navbar-brand" href="#">
+                                    <img src="Images/MDlogo.png" alt="companyLogo" class="headerLogo">
+                              </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="metaDev.html">Home</a></li>
+                                    <li><a href="metaDevAboutUs.html">About Us</a></li>
+                                    <li class="dropdown">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                                          <ul class="dropdown-menu">
+                                                <li><a href="metaDevProductBuilds.html">Builds</a></li>
+                                                <li><a href="metaDevProductPrograms.html">Code </a></li>
+                                                <li><a href="metaDevProductVideos.html">Videos</a></li>
+                                          </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                                          <ul class="dropdown-menu">
+                                                <li><a href="metaDevBuildPC.html">Build A PC</a></li>
+                                                <li><a href="metaDevBuildProgram.html">Build A Program</a></li>
+                                          </ul>
+                                    </li>
+                                    <li><a href="metaDevSponsors.html">Sponsors</a></li>
+                              </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                  </div>
+                  <!-- /.container-fluid -->
+            </nav>
+      </header>
+
+      <div class="container-fluid">
+            <div class="row">
+                  <div class="Introduction col-sm-12">
+                        <h1 id="companyName">
+                              MetaDev Technologies
+                        </h1>
+                  </div>
             </div>
-         </li>
-         <li class="Directory">
-            <div class="dropdown2">
-               <button onclick="myFunction2()" class="dropbtn2">Services</button>
-               <div id="myDropdown2" class="dropdown-content2">
-                  <a href=metaDevBuildPC.html>Build A PC?</a>
-                  <a href=metaDevBuildProgram.html>Need a Program?</a>
-               </div>
+      </div>
+
+      <div class="container-fluid">
+            <div class="row">
+                  <div class="Latest_Project col-sm-12">
+                        <h2>
+                              - Latest Projects -
+                        </h2>
+                  </div>
             </div>
-         </li>
-         <li class="Directory"><a href="metaDevSponsors.html"> Sponsors </a></li>
-      </ul>
-   </header>
+            <div class="row">
+                  <div class="Latest_Projects_1 col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4">
+                        <a href="https://github.com/nicolastolmais/neuralNet">
+                              <div class="innerbox">
+                                    <h3>
+                                          Stock Market ANN
+                                    </h3>
+                                    <p>
+                                          Neural Network to Predict Stock Trends
+                                    </p>
+                                    <img src="Images/NNpic.png" alt="projectPic1">
+                              </div>
+                        </a>
+                  </div>
 
-   <div class="Introduction">
-      <img src="Images/1-red-trianglish-pattern-flip.jpg" alt="header flip picture" class="TechPic1">
-      <img src="Images/blue-trianglish-pattern.jpeg" alt="header Picture" class="TechPic2">
-      <h1 id="companyName">
-         MetaDev Technologies
-      </h1>
-      <h1 id="leader">
-         The Leader in Technology
-      </h1>
-   </div>
-
-   <div class="Latest_Projects">
-      <h2>
-         - Latest Projects -
-      </h2>
-      <a href="https://github.com/nicolastolmais/neuralNet">
-      <div class="Latest_Projects_1">
-         <h3>
-            Stock Market ANN
-         </h3>
-         <p>
-            Neural Network to Predict Stock Trends
-         </p>
-         <img src="Images/NNpic.png" alt="projectPic1">
-      </div>
-      </a>
-      <a href="https://github.com/nicolastolmais/USPS-Address-Normalizer">
-      <div class="Latest_Projects_2">
-         <h3>
-            USPS Address Normalizer
-         </h3>
-         <p>
-            Normalizes Address to Postal Standards
-         </p>
-         <img src="Images/mail1.png" alt="projectPic2">
-      </div>
-      </a>
-      <a href="https://github.com/nicolastolmais/CompSelect">
-      <div class="Latest_Projects_3">
-         <h3>
-            Riot Project
-         </h3>
-         <p>
-            Team Composition Assistance
-         </p>
-         <img src="Images/leagueLogo.jpeg" alt="projectPic3">
-      </div>
-      </a>
-   </div>
-<img src="Images/Background-4.jpg" alt="midBackground" class="midBackground" >
-   <div class="latestBuilds">
-
-   <h2>
-      - Latest Builds -
-   </h2>
-      <a href="metaDevProductBuilds.html#Build1">
-      <div class="latestBuilds1">
-         <h3>
-            Sleeping Beast
-         </h3>
-      </div>
-      </a>
-      <a href="metaDevProductBuilds.html#Build2">
-      <div class="latestBuilds2">
-         <h3>
-            TrueGrit
-         </h3>
-      </div>
-      </a>
-      <a href="metaDevProductBuilds.html#Build3">
-      <div class="latestBuilds3">
-         <h3>
-            Jeramiah
-         </h3>
-      </div>
-      </a>
-   </div>
-
-   <div class="latestVids">
-   <h2>
-      - Latest Videos -
-   </h2>
-   <a href= "YOUTUBEVID1">
-      <div class="latestVid1">
-         <h3>
-            Latest Vid 1
-         </h3>
-      </div>
-   </a>
-   <a href="#YOUTUBEVID2">
-      <div class="latestVid2">
-         <h3>
-            Latest Vid 2
-         </h3>
-      </div>
-   </a>
-   <a href="#YOUTUBEVID3">
-      <div class="latestVid3">
-         <h3>
-            Latest Vid 3
-         </h3>
-      </div>
-   </a>
-   </div>
+                  <div class="Latest_Projects_2 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
+                        <a href="https://github.com/nicolastolmais/USPS-Address-Normalizer">
+                              <div class="innerbox">
+                                    <h3>
+                                          USPS Normalizer
+                                    </h3>
+                                    <p>
+                                          Normalizes Address to Postal Standards
+                                    </p>
+                                    <img src="Images/mail1.png" alt="projectPic2">
+                              </div>
+                        </a>
+                  </div>
 
 
+                  <div class="Latest_Projects_3 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
+                        <a href="https://github.com/nicolastolmais/CompSelect">
+                              <div class="innerbox">
+                                    <h3>
+                                          Riot Project
+                                    </h3>
+                                    <p>
+                                          Team Composition Assistance
+                                    </p>
+                                    <img src="Images/leagueLogo.jpeg" alt="projectPic3">
+                              </div>
+                        </a>
+                  </div>
 
-   <footer class ="topFooter">
-      <div id="leftSide">
-         <p><a>Contact or Follow Us</a></p>
-         <div class="follow">
-            <p><a href="https://github.com/nicolastolmais"><img src="Images/vector-free-social-media-icons.png" alt="Github"></a></p>
-            <p><a href="https://www.instagram.com/metadevtechnologies/"><img src="Images/vector-free-social-media-icons(5).png" alt="instagram"></a></p>
-            <p><a href="https://www.facebook.com/metaDev/"><img src="Images/vector-free-social-media-icons (2).png" alt="facebook"></a></p>
-            <p><a href="https://www.youtube.com/channel/UCUgz-8MUs1I_EztR_WozhsA"><img src="Images/vector-free-social-media-icons (3).png" alt="youtube"></a></p>
-            <p><a href="https://twitter.com/MetaDevTech"><img src="Images/vector-free-social-media-icons(4).png" alt="twitter"></a></p>
-         </div>
-         <div class="contactUs">
-            <p>Email: metaDevTechnologies@yahoo.com</p>
-         </div>
-      </div>
-      <div id="rightSide">
-         <img src="Images/MDlogo.png" alt="footerLogo" class="footerPic">
-      </div>
-   </footer>
+            </div>
 
-   <footer class ="bottomFooter">
-         <p id="creator"><a> Created by Nicolas Tolmais </a></p>
-         <p id="policy"><a> Privacy Policy </a></p>
-         <p id="terms"><a> Terms of Use </a></p>
-   </footer>
+            <div class="row">
+                  <div class="latestBuilds col-sm-12">
+                        <h2>
+                              - Latest Builds -
+                        </h2>
+                  </div>
+            </div>
+                  <div class="row">
+                  <div class="latestBuilds1 col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4">
+                        <a href="metaDevProductBuilds.html#Build1">
+                              <div class="innerbox">
+                                    <h3>
+                                          Indigo Plateau
+                                    </h3>
+                              </div>
+                        </a>
+                  </div>
+
+
+                  <div class="latestBuilds2 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
+                        <a href="metaDevProductBuilds.html#Build2">
+                              <div class="innerbox">
+                                    <h3>
+                                          TrueGrit
+                                    </h3>
+                              </div>
+                        </a>
+                  </div>
+
+
+                  <div class="latestBuilds3 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
+                        <a href="metaDevProductBuilds.html#Build3">
+                              <div class="innerbox">
+                                    <h3>
+                                          Jeramiah
+                                    </h3>
+                              </div>
+                        </a>
+                  </div>
+                  </div>
+            <div class="row">
+                  <div class="latestVids col-sm-12">
+                        <h2>
+                              - Latest Videos -
+                        </h2>
+                  </div>
+            </div>
+            <div class="row">
+                  <div class="latestVid1 col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4">
+                        <a href="YOUTUBEVID1">
+                              <div class="innerbox">
+                                    <h3>
+                                          Latest Vid 1
+                                    </h3>
+                              </div>
+                        </a>
+                  </div>
+
+
+                  <div class="latestVid2 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
+                        <a href="#YOUTUBEVID2">
+                              <div class="innerbox">
+                                    <h3>
+                                          Latest Vid 2
+                                    </h3>
+                              </div>
+                        </a>
+                  </div>
+                  <div class="latestVid3 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
+                        <a href="#YOUTUBEVID3">
+                              <div class="innerbox">
+                                    <h3>
+                                          Latest Vid 3
+                                    </h3>
+                              </div>
+                        </a>
+                  </div>
+            </div>
+      </div>
+
+
+
+      <footer class="topFooter">
+            <div id="leftSide">
+                  <p><a>Contact or Follow Us</a></p>
+                  <div class="follow">
+                        <p>
+                              <a href="https://github.com/nicolastolmais"><img src="Images/vector-free-social-media-icons.png" alt="Github"></a>
+                        </p>
+                        <p>
+                              <a href="https://www.instagram.com/metadevtechnologies/"><img src="Images/vector-free-social-media-icons(5).png" alt="instagram"></a>
+                        </p>
+                        <p>
+                              <a href="https://www.facebook.com/metaDev/"><img src="Images/vector-free-social-media-icons (2).png" alt="facebook"></a>
+                        </p>
+                        <p>
+                              <a href="https://www.youtube.com/channel/UCUgz-8MUs1I_EztR_WozhsA"><img src="Images/vector-free-social-media-icons (3).png" alt="youtube"></a>
+                        </p>
+                        <p>
+                              <a href="https://twitter.com/MetaDevTech"><img src="Images/vector-free-social-media-icons(4).png" alt="twitter"></a>
+                        </p>
+                  </div>
+                  <div class="contactUs">
+                        <p>Email: metaDevTechnologies@yahoo.com</p>
+                  </div>
+            </div>
+            <div id="rightSide">
+                  <img src="Images/MDlogo.png" alt="footerLogo" class="footerPic">
+            </div>
+      </footer>
+
+      <footer class="bottomFooter">
+            <p id="creator"><a> Created by Nicolas Tolmais </a></p>
+            <p id="policy"><a> Privacy Policy </a></p>
+            <p id="terms"><a> Terms of Use </a></p>
+      </footer>
+
+      <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+      <script src="classie.js"></script>
+      <script src="cbpAnimatedHeader.js"></script>
+      <script src="metaDev.js"></script>
 
 </body>
 
-<script src="metaDev.js"></script>
+</html>

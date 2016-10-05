@@ -13,347 +13,116 @@ body
 {
       font-family: "Arial", Arial, sans-serif;
       white-space: nowrap;
-      width: 80%;
-      height: 80%;
       margin: 0px;
-      padding: 0px;
+      padding-top: 20px;
       overflow-x: hidden;
 }
 
-header
-{
-   height: 50px;
-   width: 100%;
-   border: 1px solid #CCC;
-   position: fixed;
-   top: 0px;
-   font-size: 18px;
-   background-color: #233237;
-   color: #EAC67A;
-   z-index: 1;
-   padding-bottom: 5px;
-   padding-left: 350px;
-   padding-right: 350px;
-   border-bottom: solid 2px #984843;
+/*
+    Header
+*/
+
+.navbar{
+    background-color: #233237;
+    padding : 30px 15px;
+    border-bottom: 2px solid #984843;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-.headerLogo
-{
-   position: fixed;
-   margin-left: 125px;
-   margin-top: 5px;
-   height: 50px;
-   width: 50px;
-   z-index: 2;
-   border-radius: 50%;
-
+.navbar-inverse .navbar-nav>li>a {
+    color: #EAC67A;
+    font-size: 20px;
 }
 
-header a:hover{
-   color: yellow;
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #f4e2bc;
+    background-color: #38464b;
 }
 
-
-.Directory button:hover{
-   color: yellow;
+.navbar img{
+    margin-top: -17px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid 1px #984843;
 }
-.dropdown-content a:hover{
-   color: yellow;
+
+.cbp-af-header-shrink{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: .95%
 }
 
-.Directory{
-   list-style-type: none;
-   display: inline-block;
-   padding-left: 20px;
-   padding-right: 20px;
-   background-color: #233237;
-   color: #EAC67A;
-   font-size: 16px;
-   border: none;
-   cursor: pointer;
-   z-index: 2;
+/*
+    Home Page
+*/
+
+.Introduction{
+    margin-top: 50px;
+    height: 800px;
+    background-image: url(Images/1-red-trianglish-pattern-flip.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 
-.TechPic1
-{
-   top: 30px;
-   height: 500px;
-   position: relative;
-   z-index: -1;
-   border-bottom: solid 2px #984843;
-}
-.TechPic2
-{
-   margin-left: -4px;
-   top: 30px;
-   height: 500px;
-   position: relative;
-   z-index: -1;
-   border-bottom: solid 2px #984843;
-}
 
 #companyName
 {
    text-align: center;
-   font-size: 50px;
    position: absolute;
-   top: 190px;
-   width: 100%;
-   padding: 10px;
+   top: 50%;
+   left: 50%;
+   padding: 30px;
    color: white;
    background: rgba(0, 0, 0, 0.7);
+   transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
 }
 
-#leader
+.Latest_Project, .latestBuilds, .latestVids
 {
+    height: 150px;
+    margin: 0px auto;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 150px;
+    border-top: solid 3px #984843;
+    
+}
+
+
+
+.latestBuilds1, .latestBuilds2, .latestBuilds3, .Latest_Projects_1, .Latest_Projects_2, .Latest_Projects_3, .latestVid1, .latestVid2, .latestVid3
+{
+   
    text-align: center;
-   font-size: 50px;
-   position: absolute;
-   top: 270px;
-   width: 100%;
-   padding: 10px;
-   color: white;
-   background: rgba(0, 0, 0, 0.7);
-}
-
-#PCBuilder, #ProgramBuilder
-{
-   font-size: 40px;
-   position: absolute;
-   top: 200px;
-   width: 100%;
-   padding: 10px;
-   padding-left: 100px;
-   color: white;
-   background: rgba(0, 0, 0, 0.7);
-}
-
-
-.Latest_Projects
-{
-   padding-left: 80px;
-   padding-top: 100px;
-
-}
-
-.latestBuilds, .latestVids
-{
-   padding-left: 80px;
-   padding-top: 35px;
-   padding-right: 2000px;
-   border-top: solid 5px #984843;
-}
-
-.Latest_Projects_1, .Latest_Projects_2, .Latest_Projects_3, .latestVid1, .latestVid2, .latestVid3
-{
-   width: 300px;
-   display: inline-block;
-   border: 4px solid #984843;
-   text-align: center;
-   margin-left: 10px;
-   margin-right: 10px;
    margin-bottom: 50px;
-   height: 300px;
+   height: 500px;
+}
+
+.innerbox{
+    
+    margin: 15px 3px;
+    border: 4px solid #984843;
+    height: 500px;
 }
 
 .Latest_Projects_1 img, .Latest_Projects_2 img, .Latest_Projects_3 img
 {
    padding-left: 5px;
-   width: 175px;
-   height: 175px;
+   margin-top: 40px;
+   width: 250px;
+   height: 250px;
 }
 
-.latestBuilds1
-{
-   display: inline-block;
-   border: 4px solid #984843;
-   text-align: center;
-   margin-left: 10px;
-   margin-right: 10px;
-   margin-bottom: 50px;
-   height: 300px;
-   width: 300px;
-   color: #ffffff;
-   background-image: url("Images/build1.jpeg");
-   background-size: 100% 100%;
-}
-
-.latestBuilds2
-{
-display: inline-block;
-border: 4px solid #984843;
-text-align: center;
-margin-left: 10px;
-margin-right: 10px;
-margin-bottom: 50px;
-height: 300px;
-width: 300px;
-color: #ffffff;
-background-image: url("Images/build2.jpeg");
-background-size: 100% 100%;
-}
-
-.latestBuilds3
-{
-display: inline-block;
-border: 4px solid #984843;
-text-align: center;
-margin-left: 10px;
-margin-right: 10px;
-margin-bottom: 50px;
-height: 300px;
-width: 300px;
-color: #ffffff;
-background-image: url("Images/build3.jpeg");
-background-size: 100% 100%;
-}
-
-.latestVid1
-{
-   display: inline-block;
-   border: 4px solid #984843;
-   text-align: center;
-   margin-left: 10px;
-   margin-right: 10px;
-   margin-bottom: 50px;
-   height: 300px;
-   width: 300px;
-   color: #ffffff;
-}
-
-.latestVid2
-{
-display: inline-block;
-border: 4px solid #984843;
-text-align: center;
-margin-left: 10px;
-margin-right: 10px;
-margin-bottom: 50px;
-height: 300px;
-width: 300px;
-color: #ffffff;
-}
-
-.latestVid3
-{
-display: inline-block;
-border: 4px solid #984843;
-text-align: center;
-margin-left: 10px;
-margin-right: 10px;
-margin-bottom: 50px;
-height: 300px;
-width: 300px;
-color: #ffffff;
-}
-
-.Latest_Projects h2
-{
-   padding-left: 385px;
-   padding-bottom: 15px;
-}
-
- .latestBuilds h2, .latestVids h2
-{
-
-   padding-left: 400px;
-   padding-bottom: 15px;
-}
 
 .latestBuilds1 h3, .latestBuilds2 h3, .latestBuilds3 h3, .latestVid1 h3, .latestVid2 h3, .latestVid3 h3, .Latest_Projects_1 h3, .Latest_Projects_2 h3, .Latest_Projects_3 h3
 {
       padding-top: 10px;
       padding-bottom: 10px;
       background: rgba(0, 0, 0, 0.5);
-}
-
-
-
-table {
-   position: inline-block;
-   width: 1050px;
-   top:43px;
-   bottom: 50px;
-   height: 400px;
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: left;
-}
-table#deals tr:nth-child(even) {
-    background-color: #eee;
-}
-table#deals tr:nth-child(odd) {
-   background-color:#fff;
-}
-table#deals th {
-    background-color: black;
-    color: white;
-}
-
-.dropbtn, .dropbtn2 {
-    background-color: #233237;
-    color: #EAC67A;
-    font-family: "Arial", Arial, sans-serif;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.dropdown-content a:hover, .dropdown-content2 a:hover{
-   color: yellow;
-}
-
-
-.dropdown, .dropdown2  {
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-}
-
-.dropdown-content, .dropdown-content2  {
-    display: none;
-    position: absolute;
-    background-color: #233237;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
-    border: 1px solid white;
-}
-
-.dropdown-content a, .dropdown-content2 a  {
-    color: #233237;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    z-index: 2;
-}
-
-.dropdown a:hover, .dropdown2 a:hover {
-   background-color: #233243
-}
-
-.show {
-   display:block;
-   z-index: 2;
-}
-
-.Directory a:visited, .Directory a:hover, .Directory a:link, .Directory a:active {
-    color: #EAC67A;
-    text-decoration: none;
-}
-
-
-.Latest_Projects a:visited, .Latest_Projects a:hover, .Latest_Projects a:link, .Latest_Projects a:active  {
-    color: #18121E;
-    text-decoration: none;
 }
 
 
@@ -469,6 +238,17 @@ table#deals th {
    background: rgba(0, 0, 0, 0.7);
 }
 
+#PCBuilder, #ProgramBuilder
+{
+   font-size: 40px;
+   position: absolute;
+   top: 200px;
+   width: 100%;
+   padding: 10px;
+   padding-left: 100px;
+   color: white;
+   background: rgba(0, 0, 0, 0.7);
+}
 .ceoPic
 {
    position: absolute;
