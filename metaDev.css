@@ -14,7 +14,7 @@ body
       font-family: "Arial", Arial, sans-serif;
       white-space: nowrap;
       margin: 0px;
-      padding-top: 20px;
+      padding-top: 10px;
       overflow-x: hidden;
 }
 
@@ -55,7 +55,7 @@ body
 }
 
 /*
-    Home Page
+    Home Page 
 */
 
 .Introduction{
@@ -66,13 +66,65 @@ body
     background-position: center;
 }
 
+.IntroductionAbout{
+    margin-top: 50px;
+    height: 800px;
+    background-image: url(Images/2-red-trianglish-pattern-flip.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+.Introduction img{
+   position: absolute;
+   height: 415px;
+   top: 58%;
+   left: 50%;
+   padding: 30px;
+   background: rgba(0, 0, 0, 0.7);
+   transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
+}
+
+.arrow1, .arrow2, .arrow3{
+    position: absolute;
+    font-size: 70px;
+   top: 90%;
+   left: 20%;
+   transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.arrow2{
+   left: 50%;
+   color: #666666;
+}
+.arrow3{
+   left: 80%;
+   color: #cccccc;
+}
+
+.icon1 , .icon2 , .icon3{
+    font-size: 25px;
+    position: absolute;
+   top: 96%;
+   left: 20%;
+   transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.icon2{
+    left: 50%;
+    color: #666666;
+}
+.icon3{
+    left: 80%;
+    color: #cccccc;
+
+}
 
 #companyName
 {
    text-align: center;
    position: absolute;
-   top: 50%;
+   top: 23.55%;
    left: 50%;
    padding: 30px;
    color: white;
@@ -81,6 +133,7 @@ body
    -webkit-transform: translate(-50%,-50%);
 }
 
+
 .Latest_Project, .latestBuilds, .latestVids
 {
     height: 150px;
@@ -88,156 +141,153 @@ body
     padding-top: 50px;
     text-align: center;
     font-size: 150px;
-    border-top: solid 3px #984843;
+    border-top: dashed 5px #EAC67A;
     
+}
+
+.latestRow{
+    padding-bottom: 100px;
+}
+
+
+.latestBuildRow{
+    background-color: #e9eaeb;
+    padding-bottom: 30px;
 }
 
 
 
 .latestBuilds1, .latestBuilds2, .latestBuilds3, .Latest_Projects_1, .Latest_Projects_2, .Latest_Projects_3, .latestVid1, .latestVid2, .latestVid3
 {
-   
    text-align: center;
    margin-bottom: 50px;
-   height: 500px;
+   height: 600px;
 }
 
 .innerbox{
-    
     margin: 15px 3px;
     border: 4px solid #984843;
-    height: 500px;
+    height: 600px;
+}
+
+.latestBuildPic1{
+    background-image: url(Images/IMG_1234.jpg);
+    background-size: 100%;
+}
+.latestBuildPic2{
+    background-image: url(Images/build3.jpeg);
+    background-size: 100%;
+}
+.latestBuildPic3{
+    background-image: url(Images/build1.jpeg);
+    background-size: 100%;
+    
 }
 
 .Latest_Projects_1 img, .Latest_Projects_2 img, .Latest_Projects_3 img
 {
    padding-left: 5px;
    margin-top: 40px;
-   width: 250px;
-   height: 250px;
+   width: 270px;
+   height: 270px;
 }
 
 
 .latestBuilds1 h3, .latestBuilds2 h3, .latestBuilds3 h3, .latestVid1 h3, .latestVid2 h3, .latestVid3 h3, .Latest_Projects_1 h3, .Latest_Projects_2 h3, .Latest_Projects_3 h3
 {
+    color: #EAC67A;
       padding-top: 10px;
       padding-bottom: 10px;
       background: rgba(0, 0, 0, 0.5);
 }
+/*
+    Footer
+*/
 
+.topFooter{
+    background-color: #233237;
+    border-top: solid 2px #EAC67A;
+}
 
-.topFooter
+.topLeftFooter , .topRightFooter
 {
-   position: relative;
-   background-color: #233237;
    color: #EAC67A;
    font-size: 15px;
    padding-top: 30px;
-   padding-bottom: 30px;
-   padding-left: 100px;
-   width: 200%;
-   border-top: solid 2px #984843;
+   padding-bottom: 50px;
+   padding-left: 75px;
+   
 }
-.topFooter p
-{
-   display: inline-block;
-   padding-left: 25px;
+
+.topRightFooter{
+    padding-top: 80px;
 }
 
 
-.topFooter img
-{
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
 
+.contactUs{
+    padding-left: 39%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-#leftSide , #rightSide
-{
-   display: inline-block;
+
+
+.topLeftFooter img {
+    height: 75px;
+    border-radius: 50%;
 }
 
-#leftSide
-{
-   width: 500px;
-   padding-right: 100px;
-}
-
-#rightSide
-{
-   padding-left: 125px;
-   border-left: thick double #383838;
-
-}
-.contactUs p
-{
-   display: block;
-   padding-left: 100px;
-}
-
-#rightSide img
+.topRightFooter img
 {
    height: 150px;
-   width: 180px;
+   border-radius: 50%;
 }
 
 .bottomFooter
 {
-   position: relative;
+    padding: 10px;
+    text-align: center;
    background-color: #18121E;
    color: #EAC67A;
    font-size: 12px;
-   padding-top: 3px;
-   padding-bottom: 3px;
-   padding-left: 100px;
-   width:200%;
    border-top: solid 2px #984843;
 }
 
-#creator
-{
-   display: inline-block;
-   width: 650px;
+
+/*
+About Page
+*/
+
+.AboutRow{
+    
+    height: 400px;
 }
 
-#policy, #terms
-{
-   display: inline-block;
-   width: 200px;
-   clear: both;
+.AboutHeading{
+    border-top: dashed 5px #EAC67A;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
 }
 
-#follow
-{
-   display:relative;
-   clear:right;
-   padding-left: 100px;
+.About {
+    white-space: normal;
+    padding: 50px;
+    height: 500px;
 }
 
-#quote
-{
-   position: absolute;
-   top: 200px;
-   width: 310px;
-   padding: 10px;
-   margin-left: 200px;
-   color: white;
-   background: rgba(0, 0, 0, 0.7);
-   white-space: normal;
+.About img{
+    height: 200px;
+
 }
 
-#quotee
-{
-   position: absolute;
-   top: 240px;
-   width: 155px;
-   padding: 10px;
-   margin-left: 350px;
-   color: white;
-   background: rgba(0, 0, 0, 0.7);
-}
 
+
+/*
+
+*/
 #PCBuilder, #ProgramBuilder
 {
    font-size: 40px;
@@ -259,82 +309,13 @@ body
    z-index: 1;
    border: 2px solid #984843;
    border-radius: 5%;
-
-}
-
-.About
-{
-   padding-left: 80px;
-   padding-top: 50px;
-   padding-bottom: 25px;
-   padding-right: 50px;
-   width: 1000px;
-}
-
-
-.AboutLeft
-{
-   display: inline-block;
-   font-size: 20px;
-   margin-left: 50px;
-   margin-right: 50px;
-   margin-bottom: 50px;
-   margin-top: 50px;
-   height: 200px;
-   width: 400px;
-   white-space: normal;
-}
-
-.AboutRight
-{
-   display: inline-block;
-   font-size: 20px;
-   margin-left: 550px;
-   margin-right: 50px;
-   margin-bottom: 50px;
-   margin-top: 50px;
-   height: 200px;
-   width: 400px;
-   white-space: normal;
-}
-
-
-.AboutCenter
-{
-   display: inline-block;
-   font-size: 20px;
-   margin-left: 300px;
-   margin-right: 50px;
-   margin-top: 100px;
-   margin-bottom: 100px;
-   white-space: normal;
-   width: 400px;
 }
 
 
 
 
-#aboutImage1
-{
-   position: absolute;
-   border-radius: 5px;
-   margin-left: 550px;
-   margin-top: 30px;
-   height: auto;
-   width: 300px;
-   border: solid 5px #984843;
-}
 
-#aboutImage2
-{
-   position: absolute;
-   border-radius: 5px;
-   margin-left: 40px;
-   margin-top: 30px;
-   height: auto;
-   width: 450px;
-   border: solid 5px #984843;
-}
+
 
 #buildImage1
 {
@@ -384,9 +365,6 @@ body
 }
 
 
-.smart-green .button:hover {
-    background-color: lightblue;
-}
 
 .midBackground
 {

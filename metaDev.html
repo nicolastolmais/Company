@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-<meta charset=”utf-8” />
-<meta name=”author” content=”Nic Tolmais” />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous">
-<link rel="stylesheet" href="metaDev.css">
-<title>MetaDev Technologies</title>
+
+<head>
+      <meta charset=”utf-8” />
+      <meta name=”author” content=”Nic Tolmais” />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="metaDev.css">
+      <title>MetaDev Technologies</title>
+</head>
 
 <body>
       <header>
@@ -21,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-                              <a class="navbar-brand" href="#">
+                              <a class="navbar-brand" href="#social">
                                     <img src="Images/MDlogo.png" alt="companyLogo" class="headerLogo">
                               </a>
                         </div>
@@ -61,11 +65,19 @@
                         <h1 id="companyName">
                               MetaDev Technologies
                         </h1>
+                        <img src="Images/MDlogo.png" alt="companyLogo" class="headerLogo">
+                        <a href="#lateProject"><i class="fa fa-chevron-circle-down arrow1" aria-hidden="true"></i>
+                        <p class="icon1">Projects</p></a>
+                        <a href="#lateBuild"><i class="fa fa-chevron-circle-down arrow2" aria-hidden="true"></i>
+                        <p class="icon2">Builds</p></a>
+                        <a href="#lateVideo"><i class="fa fa-chevron-circle-down arrow3" aria-hidden="true"></i>
+                        <p class="icon3">Videos</p></a>
                   </div>
             </div>
       </div>
 
       <div class="container-fluid">
+            <a name="lateProject"></a>
             <div class="row">
                   <div class="Latest_Project col-sm-12">
                         <h2>
@@ -73,7 +85,7 @@
                         </h2>
                   </div>
             </div>
-            <div class="row">
+            <div class="row latestRow">
                   <div class="Latest_Projects_1 col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4">
                         <a href="https://github.com/nicolastolmais/neuralNet">
                               <div class="innerbox">
@@ -118,18 +130,18 @@
                   </div>
 
             </div>
-
-            <div class="row">
+            <a name="lateBuild"></a>
+            <div class="row latestBuildRow">
                   <div class="latestBuilds col-sm-12">
                         <h2>
                               - Latest Builds -
                         </h2>
                   </div>
             </div>
-                  <div class="row">
+            <div class="row latestRow latestBuildRow">
                   <div class="latestBuilds1 col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4">
                         <a href="metaDevProductBuilds.html#Build1">
-                              <div class="innerbox">
+                              <div class="innerbox latestBuildPic1">
                                     <h3>
                                           Indigo Plateau
                                     </h3>
@@ -140,7 +152,7 @@
 
                   <div class="latestBuilds2 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
                         <a href="metaDevProductBuilds.html#Build2">
-                              <div class="innerbox">
+                              <div class="innerbox latestBuildPic2">
                                     <h3>
                                           TrueGrit
                                     </h3>
@@ -151,14 +163,15 @@
 
                   <div class="latestBuilds3 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
                         <a href="metaDevProductBuilds.html#Build3">
-                              <div class="innerbox">
+                              <div class="innerbox latestBuildPic3">
                                     <h3>
                                           Jeramiah
                                     </h3>
                               </div>
                         </a>
                   </div>
-                  </div>
+            </div>
+            <a name="lateVideo"></a>
             <div class="row">
                   <div class="latestVids col-sm-12">
                         <h2>
@@ -166,75 +179,87 @@
                         </h2>
                   </div>
             </div>
-            <div class="row">
+            <div class="row latestRow">
                   <div class="latestVid1 col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4">
-                        <a href="YOUTUBEVID1">
-                              <div class="innerbox">
-                                    <h3>
-                                          Latest Vid 1
-                                    </h3>
-                              </div>
+                        <div class="innerbox">
+                              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qLFs8w1r2ow" frameborder="0" allowfullscreen></iframe>
+                        </div>
                         </a>
                   </div>
 
 
                   <div class="latestVid2 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
-                        <a href="#YOUTUBEVID2">
-                              <div class="innerbox">
-                                    <h3>
-                                          Latest Vid 2
-                                    </h3>
-                              </div>
+                        <div class="innerbox">
+                              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ku5szBwvrm8" frameborder="0" allowfullscreen></iframe>
+                        </div>
                         </a>
                   </div>
                   <div class="latestVid3 col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-offset-0 col-md-4">
-                        <a href="#YOUTUBEVID3">
-                              <div class="innerbox">
-                                    <h3>
-                                          Latest Vid 3
-                                    </h3>
-                              </div>
+                        <div class="innerbox">
+                              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5b82f4a8zg" frameborder="0" allowfullscreen></iframe>
+                        </div>
                         </a>
                   </div>
             </div>
+            <a name="social"></a>
+            <div class="topFooter row">
+                  <footer class="topLeftFooter col-xs-12 col-sm-8">
+                        <div class="row">
+                              <div class="contactUs col-xs-12 ">
+                                    <h3>
+                                          Contact or Follow Us
+                                    </h3>
+                              </div>
+                        </div>
+                        
+                        <div class="row">
+                              <div class="socialMedia">
+                                    <div class="github col-xs-offset-4 col-xs-8 col-sm-offset-0 col-sm-4 col-md-offset-1 col-md-2">
+                                          <p>
+                                                <a href="https://github.com/nicolastolmais"><img src="Images/vector-free-social-media-icons.png" alt="Github"></a>
+                                          </p>
+                                    </div>
+                                    <div class="instagram col-xs-offset-4 col-xs-8 col-sm-offset-0 col-sm-4 col-md-2">
+                                          <p>
+                                                <a href="https://www.instagram.com/metadevtechnologies/"><img src="Images/vector-free-social-media-icons(5).png" alt="instagram"></a>
+                                          </p>
+                                    </div>
+                                    <div class="facebook col-xs-offset-4 col-xs-8 col-sm-offset-0 col-sm-4 col-md-2">
+                                          <p>
+                                                <a href="https://www.facebook.com/metaDev/"><img src="Images/vector-free-social-media-icons (2).png" alt="facebook"></a>
+                                          </p>
+                                    </div>
+                                    <div class="youtube col-xs-offset-4 col-xs-8 col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-2">
+                                          <p>
+                                                <a href="https://www.youtube.com/channel/UCUgz-8MUs1I_EztR_WozhsA"><img src="Images/vector-free-social-media-icons (3).png" alt="youtube"></a>
+                                          </p>
+                                    </div>
+                                    <div class="twitter col-xs-offset-4 col-xs-8 col-sm-offset-0 col-sm-4 col-md-2">
+                                          <p>
+                                                <a href="https://twitter.com/MetaDevTech"><img src="Images/vector-free-social-media-icons(4).png" alt="twitter"></a>
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </footer>
+                  <footer class="topRightFooter col-xs-offset-3 col-xs-9 col-sm-offset-0 col-sm-4">
+                        <img src="Images/MDlogo.png" alt="footerLogo" class="footerLogo">
+                  </footer>
+            </div>
+
+
+            <div class="row bottomFooter">
+                  <div class="col-xs-12 col-md-4">
+                        <p>Created by Nicolas Tolmais </p>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                        <p> Privacy Policy</p>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                        <p> Terms of Use</p>
+                  </div>
+            </div>
       </div>
-
-
-
-      <footer class="topFooter">
-            <div id="leftSide">
-                  <p><a>Contact or Follow Us</a></p>
-                  <div class="follow">
-                        <p>
-                              <a href="https://github.com/nicolastolmais"><img src="Images/vector-free-social-media-icons.png" alt="Github"></a>
-                        </p>
-                        <p>
-                              <a href="https://www.instagram.com/metadevtechnologies/"><img src="Images/vector-free-social-media-icons(5).png" alt="instagram"></a>
-                        </p>
-                        <p>
-                              <a href="https://www.facebook.com/metaDev/"><img src="Images/vector-free-social-media-icons (2).png" alt="facebook"></a>
-                        </p>
-                        <p>
-                              <a href="https://www.youtube.com/channel/UCUgz-8MUs1I_EztR_WozhsA"><img src="Images/vector-free-social-media-icons (3).png" alt="youtube"></a>
-                        </p>
-                        <p>
-                              <a href="https://twitter.com/MetaDevTech"><img src="Images/vector-free-social-media-icons(4).png" alt="twitter"></a>
-                        </p>
-                  </div>
-                  <div class="contactUs">
-                        <p>Email: metaDevTechnologies@yahoo.com</p>
-                  </div>
-            </div>
-            <div id="rightSide">
-                  <img src="Images/MDlogo.png" alt="footerLogo" class="footerPic">
-            </div>
-      </footer>
-
-      <footer class="bottomFooter">
-            <p id="creator"><a> Created by Nicolas Tolmais </a></p>
-            <p id="policy"><a> Privacy Policy </a></p>
-            <p id="terms"><a> Terms of Use </a></p>
-      </footer>
 
       <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
