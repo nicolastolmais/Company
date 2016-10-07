@@ -16,6 +16,7 @@ body
       margin: 0px;
       padding-top: 10px;
       overflow-x: hidden;
+      cursor: wait;
 }
 
 /*
@@ -64,6 +65,7 @@ body
     background-image: url(Images/1-red-trianglish-pattern-flip.jpg);
     background-size: cover;
     background-position: center;
+    border-bottom: solid 5px #EAC67A;
 }
 
 .IntroductionAbout{
@@ -72,6 +74,7 @@ body
     background-image: url(Images/2-red-trianglish-pattern-flip.jpg);
     background-size: cover;
     background-position: center;
+    border-bottom: solid 5px #EAC67A;
 }
 
 .Introduction img{
@@ -85,39 +88,44 @@ body
    -webkit-transform: translate(-50%,-50%);
 }
 
-.arrow1, .arrow2, .arrow3{
+.arrow1, .arrow2, .arrow3, .arrow4, .arrow5{
     position: absolute;
     font-size: 70px;
-   top: 90%;
+    top: 90%;
    left: 20%;
    transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
 }
-.arrow2{
-   left: 50%;
-   color: #666666;
-}
-.arrow3{
-   left: 80%;
-   color: #cccccc;
-}
 
-.icon1 , .icon2 , .icon3{
+.headIcon1 , .headIcon2 , .headIcon3, .headIcon4, .headIcon5{
     font-size: 25px;
     position: absolute;
-   top: 96%;
-   left: 20%;
-   transform: translate(-50%,-50%);
+    top: 96%;
+    left: 20%;
+    transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
 }
-.icon2{
-    left: 50%;
-    color: #666666;
-}
-.icon3{
-    left: 80%;
-    color: #cccccc;
 
+.headIcon1, .arrow1 {
+    left: 20%;
+    color: #191919;
+}
+
+.headIcon2, .arrow2{
+    left: 35%;
+    color: #4c4c4c;
+}
+.headIcon3, .arrow3{
+    left: 50%;
+    color: #7f7f7f;
+}
+.headIcon4, .arrow4{
+    left: 65%;
+    color: #b2b2b2;
+}
+.headIcon5, .arrow5{
+    left: 80%;
+    color: #e5e5e5;
 }
 
 #companyName
@@ -226,9 +234,11 @@ body
 
 
 .contactUs{
-    padding-left: 39%;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+.contactUs h3{
+    padding-left: 42%;
 }
 
 
@@ -260,27 +270,36 @@ About Page
 */
 
 .AboutRow{
-    
-    height: 400px;
+    margin-bottom: 150px;
 }
 
 .AboutHeading{
-    border-top: dashed 5px #EAC67A;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-left: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-size: 25px;
+    text-align: center;
 }
 
 .About {
     white-space: normal;
-    padding: 50px;
-    height: 500px;
+    height: 300px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 .About img{
     height: 200px;
+}
 
+.ContactRow{
+    text-align: center;
+}
+
+.ContactRow img{
+    padding-left: 5%;
 }
 
 
