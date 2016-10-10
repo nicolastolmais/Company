@@ -1,10 +1,11 @@
-$( document ).ready(function() {
-  
-//javascript if browser width is less x than change css
-$(function () {
-  $(window).on("load resize", function () {
-    $(".backgroundPic").css("height", window.innerHeight);
-  }); 
+$(document).ready(function () {
+
+  //javascript if browser width is less x than change css
+  $(function () {
+    $(window).on("load resize", function () {
+      $(".backgroundPic").css("height", window.innerHeight);
+    });
+  });
 
 
 
@@ -15,9 +16,9 @@ $(function () {
     }, 1500, 'easeInOutExpo');
     event.preventDefault();
   });
-});
 
-//Adding carousel
-$('.carousel').carousel();
+
+  //Adding carousel
+  $('.carousel').carousel();
 
 });
