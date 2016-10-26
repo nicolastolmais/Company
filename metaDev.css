@@ -16,7 +16,6 @@ body
       margin: 0px;
       padding-top: 10px;
       overflow-x: hidden;
-      cursor: wait;
 }
 
 /*
@@ -68,14 +67,7 @@ body
     border-bottom: solid 5px #EAC67A;
 }
 
-.IntroductionAbout{
-    margin-top: 50px;
-    height: 800px;
-    background-image: url(Images/2-red-trianglish-pattern-flip.jpg);
-    background-size: cover;
-    background-position: center;
-    border-bottom: solid 5px #EAC67A;
-}
+
 
 .Introduction img{
    position: absolute;
@@ -87,6 +79,20 @@ body
    transform: translate(-50%,-50%);
    -webkit-transform: translate(-50%,-50%);
 }
+.Introduction p{
+   position: absolute;
+   height: 200px;
+   top: 48%;
+   left: 50%;
+   padding: 30px;
+   background: rgba(0, 0, 0, 0.7);
+   transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
+   text-align: center;
+   color: #ffffff
+}
+
+
 
 .arrow1, .arrow2, .arrow3, .arrow4, .arrow5{
     position: absolute;
@@ -269,14 +275,22 @@ body
 About Page
 */
 
+.IntroductionAbout{
+    margin-top: 50px;
+    height: 800px;
+    background-image: url(Images/2-red-trianglish-pattern-flip.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid 5px #EAC67A;
+}
+
 .AboutRow{
     margin-bottom: 150px;
 }
 
 .AboutHeading{
     padding-top: 60px;
-    padding-left: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     font-size: 25px;
     text-align: center;
 }
@@ -284,14 +298,17 @@ About Page
 .About {
     white-space: normal;
     height: 300px;
+    padding: 100px;
 }
+
 
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
 
 .About img{
-    height: 200px;
+    height: 300px;
+    left: 50%;
 }
 
 .ContactRow{
@@ -302,11 +319,10 @@ About Page
     padding-left: 5%;
 }
 
-
-
 /*
 
 */
+
 #PCBuilder, #ProgramBuilder
 {
    font-size: 40px;
@@ -318,23 +334,6 @@ About Page
    color: white;
    background: rgba(0, 0, 0, 0.7);
 }
-.ceoPic
-{
-   position: absolute;
-   top: 125px;
-   margin-left: 650px;
-   height: 300px;
-   width: 275px;
-   z-index: 1;
-   border: 2px solid #984843;
-   border-radius: 5%;
-}
-
-
-
-
-
-
 
 #buildImage1
 {
@@ -384,7 +383,6 @@ About Page
 }
 
 
-
 .midBackground
 {
    top: auto;
@@ -395,32 +393,6 @@ About Page
    opacity: 0.03;
 }
 
-.sponsorCenter{
-   display: inline-block;
-   font-size: 20px;
-   margin-left: 150px;
-   margin-right: 250px;
-   margin-top: 50px;
-   margin-bottom: 75px;
-   white-space: normal;
-   width: 900px; 
-}
-
-.sponsorPics img{
-    width: 200px;
-    float: left;
-    padding-top: 40px;
-    margin-left: 100px;
-    margin-right: 10px;
-    padding-right: 50px;
-}
-
-.sponsorDescription{
-    border-top: solid 5px #984843;
-    margin-left: 200px;
-    margin-bottom: 150px;
-    white-space: normal;
-}
 
 .Product {
    border-top: solid 5px #984843; 
@@ -461,4 +433,48 @@ About Page
 
 .PCBuildPics{
     padding-left: 50px;
+}
+
+
+/*
+Sponsors
+*/
+
+.SponsorHeader{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.IntroductionSponsor{
+    margin-top: 50px;
+    height: 800px;
+    background-image: url(Images/5-red-trianglish-pattern-flip.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid 5px #EAC67A;
+}
+
+
+.sponsorCenter{
+   display: inline-block;
+   font-size: 20px;
+   margin-left: 150px;
+   margin-right: 250px;
+   margin-top: 50px;
+   margin-bottom: 75px;
+   white-space: normal;
+   width: 900px; 
+}
+
+.sponsorPics img{
+    height: 250px;
+    padding-top: 40px;
+}
+
+.sponsorDescription{
+    
+    margin-bottom: 150px;
+    white-space: normal;
 }
