@@ -264,7 +264,6 @@ body
 }
 
 
-
 .topLeftFooter img {
     height: 75px;
     border-radius: 50%;
@@ -373,22 +372,6 @@ About Page
     padding-right: 50px;
 }
 
-/*
-
-*/
-
-/*
-Code
-*/
-
-.IntroductionProducts{
-    margin-top: 20px;
-    height: 800px;
-    background-image: url(Images/3-red-trianglish-pattern-flip.jpg);
-    background-size: cover;
-    background-position: center;
-    border-bottom: solid 5px #EAC67A;
-}
 
 /*
 
@@ -406,7 +389,6 @@ Services
     background-position: center;
     border-bottom: solid 5px #EAC67A;
 }
-
 
 
 .personalInfo
@@ -450,9 +432,6 @@ Services
 /*
 
 */
-
-
-
 
 
 /*
