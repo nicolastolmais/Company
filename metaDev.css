@@ -54,12 +54,30 @@ body
     opacity: .95%
 }
 
+.headerCenter{
+   display: inline-block;
+   font-size: 20px;
+   margin-left: 150px;
+   margin-right: 250px;
+   margin-top: 50px;
+   margin-bottom: 75px;
+   white-space: normal;
+   width: 900px; 
+}
+.pageHeader{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
 /*
     Home Page 
 */
 
 .Introduction{
-    margin-top: 50px;
+    margin-top: 20px;
     height: 800px;
     background-image: url(Images/1-red-trianglish-pattern-flip.jpg);
     background-size: cover;
@@ -242,9 +260,7 @@ body
 .contactUs{
     padding-top: 40px;
     padding-bottom: 40px;
-}
-.contactUs h3{
-    padding-left: 42%;
+    text-align: center;
 }
 
 
@@ -276,7 +292,7 @@ About Page
 */
 
 .IntroductionAbout{
-    margin-top: 50px;
+    margin-top: 20px;
     height: 800px;
     background-image: url(Images/2-red-trianglish-pattern-flip.jpg);
     background-size: cover;
@@ -320,30 +336,78 @@ About Page
 }
 
 /*
+    Products Pages
+*/
+
+.IntroductionProducts{
+    margin-top: 20px;
+    height: 800px;
+    background-image: url(Images/3-red-trianglish-pattern-flip.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid 5px #EAC67A;
+}
+
+.Product, .Code, .Video {
+   border-bottom: solid 5px #984843; 
+}
+
+
+.PCBuildDescription , .VideoDescription , .ProgramDescription{
+    font-size: 20px;
+    padding-top: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+    white-space: normal;
+}
+
+.PCBuildName , .VideoName , .ProgramName{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.PCBuildPics img{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*
 
 */
 
-#PCBuilder, #ProgramBuilder
-{
-   font-size: 40px;
-   position: absolute;
-   top: 200px;
-   width: 100%;
-   padding: 10px;
-   padding-left: 100px;
-   color: white;
-   background: rgba(0, 0, 0, 0.7);
+/*
+Code
+*/
+
+.IntroductionProducts{
+    margin-top: 20px;
+    height: 800px;
+    background-image: url(Images/3-red-trianglish-pattern-flip.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid 5px #EAC67A;
 }
 
-#buildImage1
-{
-   position: absolute;
-   border-radius: 5px;
-   padding-left: 550px;
-   padding-top: 30px;
-   height: auto;
-   width: 350px;
+/*
+
+*/
+
+/*
+Services
+*/
+
+.IntroductionServices{
+    margin-top: 20px;
+    height: 800px;
+    background-image: url(Images/4-red-trianglish-pattern-flip.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid 5px #EAC67A;
 }
+
+
 
 .personalInfo
 {
@@ -383,72 +447,26 @@ About Page
 }
 
 
-.midBackground
-{
-   top: auto;
-   height: 485px;
-   width: 1500px;
-   position: absolute;
-   z-index: -1;
-   opacity: 0.03;
-}
+/*
+
+*/
 
 
-.Product {
-   border-top: solid 5px #984843; 
-   margin-left: 50px;
-}
 
-.PCBuildDescription , .VideoDescription , .ProgramDescription{
-    padding-top: 10px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-    white-space: normal;
-    clear: both;
-}
-
-.PCBuildName , .VideoName , .ProgramName{
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-bottom: 10px;
-}
-
-.PCBuildPics img{
-    display:inline;
-    width: 200px;
-    padding-left: 5px;
-}
-
-.ProgramPics img{
-    display:inline;
-    width: 200px;
-    padding-left: 5px;
-}
-
-.VideoPic img{
-    display:inline;
-    width: 200px;
-    padding-left: 5px;
-}
-
-.PCBuildPics{
-    padding-left: 50px;
-}
 
 
 /*
 Sponsors
 */
 
-.SponsorHeader{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    font-size: 25px;
-    text-align: center;
+.Sponsors{
+    border-bottom: solid 5px #984843; 
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .IntroductionSponsor{
-    margin-top: 50px;
+    margin-top: 20px;
     height: 800px;
     background-image: url(Images/5-red-trianglish-pattern-flip.jpg);
     background-size: cover;
@@ -457,16 +475,6 @@ Sponsors
 }
 
 
-.sponsorCenter{
-   display: inline-block;
-   font-size: 20px;
-   margin-left: 150px;
-   margin-right: 250px;
-   margin-top: 50px;
-   margin-bottom: 75px;
-   white-space: normal;
-   width: 900px; 
-}
 
 .sponsorPics img{
     height: 250px;
@@ -476,5 +484,7 @@ Sponsors
 .sponsorDescription{
     
     margin-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
     white-space: normal;
 }
