@@ -12,7 +12,7 @@ $(document).ready(function () {
   //Smooth Scrolling
   $('.Introduction a').bind('click', function () {
     $('html, body').stop().animate({
-      scrollTop: $($(this).attr('href')).offset().top-50
+      scrollTop: $($(this).attr('href')).offset().top - 50
     }, 1500, 'easeInOutExpo');
     event.preventDefault();
   });
@@ -20,5 +20,7 @@ $(document).ready(function () {
 
   //Adding carousel
   $('.carousel').carousel();
+
+
 
 });

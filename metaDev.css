@@ -267,12 +267,14 @@ body
 .topLeftFooter img {
     height: 75px;
     border-radius: 50%;
+    box-shadow: 2px 2px 2px #000000;
 }
 
 .topRightFooter img
 {
    height: 150px;
    border-radius: 50%;
+   box-shadow: 2px 2px 2px #000000;
 }
 
 .bottomFooter
@@ -391,30 +393,29 @@ Services
 }
 
 
-.personalInfo
-{
-   padding-left: 50px;
-   padding-bottom: 50px;
+.pcBuildForm
+{ 
+   padding: 50px;
+   border: solid 5px #EAC67A;
 }
 
-.personalInfo legend
+.pcBuildForm legend
 {
    padding: 0.2em 0.5em;
    color: #233237;
    background-color: #fafafa;
 }
 
-.personalInfo fieldset
+.pcBuildForm fieldset
 {
    padding: 15px;
    border: 1px solid #233237;
    color: #233237;
    background-color: #fafafa;
-   width: 500px;
    
 }
 
-.personalInfo input, textarea{
+.pcBuildForm input, textarea{
     background-color: #fafafa;
     border-radius: 5px;
     border: none;
@@ -422,12 +423,11 @@ Services
     color: #233237;
     text-shadow: 2px 2px 2px #ededed;
     box-shadow: 1px 1px 1px #EAC67A;
-    width: 500px;
-}
-.personalInfo input{
-    width: 300px;
 }
 
+.buildForm{
+    margin-bottom: 50px;
+}
 
 /*
 
